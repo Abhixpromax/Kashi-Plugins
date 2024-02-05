@@ -94,7 +94,7 @@ async def unblock_user(client: Client, message: Message):
         await hellbot.error(message, f"`Couldn't unblock {user.mention}`")
 
 
-@on_message(["allow", "approve"], allow_stan=True)
+@on_message(["allow", "approve","ap"], allow_stan=True)
 async def allow_pm(client: Client, message: Message):
     if len(message.command) > 1:
         try:
